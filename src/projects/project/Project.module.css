@@ -1,0 +1,21 @@
+.project {
+    width: 500px;
+    min-height: 500px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.img {
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.button {
+
+}
