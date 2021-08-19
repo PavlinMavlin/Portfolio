@@ -6,6 +6,7 @@ import {Project} from "./project/Project";
 
 export function Projects() {
     return (
+
         <div className={style.projectsBlock}>
             <div className={`${s.container} ${style.projectsContainer}`}>
                 <h2 className={style.title}>Projects</h2>
