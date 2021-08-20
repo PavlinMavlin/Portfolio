@@ -7,10 +7,11 @@
 .projectsContainer {
     flex-direction: column;
     justify-content: center;
+    flex-wrap: nowrap;
 
 }
 
-.title{
+.title {
     background-color: darkgray;
 }
 
@@ -20,10 +21,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-/*display: grid;*/
-/*    grid-template-columns: repeat(2,1fr);*/
-/*    grid-gap:30px;*/
 }
 
 

@@ -1,21 +1,24 @@
 .project {
-    width: 500px;
+    width: 450px;
     min-height: 500px;
     background-color: darkgray;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
+    /*align-items: center;*/
+    /*text-align: center;*/
+    /*border-radius: 5px;*/
 }
 
 .img {
-    width: 500px;
-    height: 250px;
+    /*width: 500px;*/
+    height: 300px;
     background-color: white;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button {
-
+.viewBtn {
+background-color: yellow;
+    padding: 10px 20px;
 }
