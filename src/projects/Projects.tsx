@@ -9,7 +9,9 @@ export function Projects() {
 
         <div className={style.projectsBlock}>
             <div className={`${s.container} ${style.projectsContainer}`}>
-                <h2 className={style.title}>Projects</h2>
+                <div className={style.title}>
+                    <h2 >Projects</h2>
+                </div>
                 <div className={style.projects}>
                     <Project title={"Social network"}
                              description={"Web application that allows registered users to post information and communicate with each other."}/>
