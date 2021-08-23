@@ -2,6 +2,7 @@ import React from 'react';
 import style from ".//Projects.module.css"
 import s from "../common/styles/Container.module.css"
 import {Project} from "./project/Project";
+import {Title} from "../common/components/title/Title";
 
 
 export function Projects() {
@@ -9,9 +10,7 @@ export function Projects() {
 
         <div className={style.projectsBlock}>
             <div className={`${s.container} ${style.projectsContainer}`}>
-                <div className={style.title}>
-                    <h2 >Projects</h2>
-                </div>
+                <Title text={"Project"}/>
                 <div className={style.projects}>
                     <Project title={"Social network"}
                              description={"Web application that allows registered users to post information and communicate with each other."}/>

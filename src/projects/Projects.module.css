@@ -12,21 +12,6 @@
 
 }
 
-.title {
-
-    margin:0 0 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 5px;
-}
-
-.title h2 {
-margin: 0;
-}
 
 .projects {
     border: 1px solid;
@@ -34,6 +19,7 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 1129px) {
