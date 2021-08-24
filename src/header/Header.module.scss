@@ -1,0 +1,10 @@
+@import "./src/common/styles/sass/mixins.scss";
+@import "./src/common/styles/sass/variables";
+
+.header {
+    height: 80px;
+    @include flex(row,flex-end,center,nowrap);
+    background-color: $bgColor;
+
+
+}

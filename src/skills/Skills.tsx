@@ -7,7 +7,7 @@ import {Title} from "../common/components/title/Title";
 export function Skills() {
     return (
         <div className={style.skillsBlock}>
-            <div className={`${s.container} ${style.skillsContainer}`}>
+            <div className={`${style.container} ${style.skillsContainer}`}>
                 <Title text={"Skills"}/>
                 <div className={style.skills}>
                     <Skill title={"React"} description={"Library for developing user interfaces and creating one-page applications using components and Virtual DOM."}/>
