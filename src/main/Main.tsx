@@ -5,15 +5,12 @@ import style from './Main.module.scss';
 export function Main() {
     return (
         <div className={style.mainBlock}>
-            <div className={style.container}>
-                <div className={style.text}>
-                    <span>Hi There</span>
-                    <h1> I am Pavel Korobov</h1>
-                    <p>Frontend Developer</p>
-                </div>
-                <div className={style.photo}></div>
+            <div className={style.text}>
+                <span>Hi There</span>
+                <h1> I am Pavel Korobov</h1>
+                <p>Frontend Developer</p>
             </div>
-
+            <div className={style.photo}></div>
         </div>
     );
 }

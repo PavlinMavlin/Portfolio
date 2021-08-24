@@ -3,8 +3,4 @@
 
 .header {
     height: 80px;
-    @include flex(row,flex-end,center,nowrap);
-    background-color: $bgColor;
-
-
 }

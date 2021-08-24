@@ -2,28 +2,20 @@
 @import "./src/common/styles/sass/mixins";
 
 .nav {
-
-
-
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  @include container();
+  @include flex(row, flex-end, center, nowrap);
+
+  .navText {
+    color: $textColor;
+    @include text($titleFontFamily, 17px, 2, 500);
+    letter-spacing: .4px;
+    text-decoration: none;
+    padding: 4px;
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+  }
 }
 
-.navText {
-  color: $textColor;
-  font-family: $titleFontFamily;
-  font-size: .875rem;
-  font-weight: 500;
-  letter-spacing: .4px;
-  text-decoration: none;
-  padding: 0 .31rem;
-  text-transform: uppercase;
-  position: relative;
-  margin-right: 1.75rem;
-  cursor: pointer;
-}

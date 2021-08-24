@@ -1,34 +1,23 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .projectsBlock {
   background-color: $bgColor;
   padding: 100px 0;
+
   .projectsContainer {
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
+    min-height: 100%;
+    @include container();
+    @include flex(column,space-around,center,wrap);
     .projects {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flex(row,space-between, flex-start,wrap);
       margin-top: 30px;
-      align-items: flex-start;
       @media screen and (max-width: 1129px) {
         justify-content: center;
       }
     }
   }
-}
-.container {
-  min-height: 100%;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
 }
 
 
