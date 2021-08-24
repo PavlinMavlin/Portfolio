@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Project.module.css';
+import style from './Project.module.scss';
 
 type ProjectPropsType = {
     title: string
@@ -10,7 +10,7 @@ type ProjectPropsType = {
 export function Project(props: ProjectPropsType) {
     return (
         <div className={style.project}>
-            <div className={style.img} style={props.style}>
+            <div className={style.image} style={props.style}>
                 <a className={style.viewBtn}>Смотреть</a>
             </div>
             <div className={style.projectInfo}>
