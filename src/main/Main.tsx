@@ -9,7 +9,7 @@ export function Main(props:MainpPropsType) {
     return (
         <div className={style.mainBlock}>
             <div className={style.text}>
-                <span>Hi There</span>
+                <span>Hi There,</span>
                 <h1> I am Pavel Korobov</h1>
                 <p>Frontend Developer</p>
             </div>

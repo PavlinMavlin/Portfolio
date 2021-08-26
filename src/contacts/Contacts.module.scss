@@ -1,0 +1,78 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+@import "../common/components/button/Button.module";
+
+.contactBlock {
+  height: 100%;
+  background-color: $bgColor;
+  padding-top: 20px;
+
+  .contactContainer {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100%;
+
+    border-radius: 5px;
+    @include flex(column, flex-start, center, nowrap);
+    background-color: $bgSecondColor;
+    padding: 60px 0 0;
+
+    .contactForm {
+      @include flex(column, space-between, center, nowrap);
+      width: 70%;
+      height: 450px;
+
+      @media only screen and (max-width: 1150px) {
+        width: 85%;
+      }
+      @media screen and (orientation: landscape) and (min-height: 200px) and (max-height: 450px) {
+        height: 370px;
+      }
+
+      .contactInput {
+        @include text($textFontFamily, 20px, 1.2, 500);
+        @include inputAndTextArea(100%, 50px, $inputTextColor, none, 5px, .2s);
+        padding: 0 15px;
+        @media only screen and (min-width: 100px) and (max-width: 1700px) {
+          font-size: 16px;
+        }
+        @media only screen and (max-width: 700px) {
+          padding: 0 7px;
+        }
+        @media screen and (orientation: landscape) and (min-height: 200px) and (max-height: 450px) {
+          height: 40px;
+          font-size: 14px;
+        }
+
+        &:focus {
+          border: 3px solid $primaryColor;
+        }
+      }
+
+      .contactTextArea {
+        @include text($textFontFamily, 20px, 1.2, 500);
+        @media only screen and (min-width: 100px) and (max-width: 1700px) {
+          font-size: 16px;
+        }
+        @include inputAndTextArea(100%, 200px, $inputTextColor, none, 5px, .2s);
+        padding: 8px 15px;
+        @media only screen and (max-width: 700px) {
+          padding: 7px 7px;
+        }
+        @media screen and (orientation: landscape) and (min-height: 200px) and (max-height: 450px) {
+          height: 150px;
+          font-size: 15px;
+        }
+
+        &:focus {
+          border: 3px solid $primaryColor;
+        }
+      }
+
+      .contactButton {
+        @extend .button;
+      }
+    }
+  }
+}
