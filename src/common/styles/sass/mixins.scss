@@ -1,29 +1,18 @@
 @import "./variables";
 
-@mixin text($fontFamily,$fontSize,$lineHeight,$fontWeight) {
+@mixin flexBox($flexDirection, $justifyContent, $alineItems, $flexWrap) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alineItems;
+  flex-wrap: $flexWrap;
+}
+
+@mixin text($fontFamily, $fontSize, $fontWeight, $textColor) {
   font-family: $fontFamily;
   font-size: $fontSize;
-  line-height: $lineHeight;
   font-weight: $fontWeight;
-}
-
-@mixin container() {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@mixin flex( $direction,$justifyContent,$alignItems,$wrap) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justifyContent;
-  align-items: $alignItems;
-  flex-wrap: $wrap;
-}
-
-@mixin bySettings() {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: $textColor;
 }
 
 @mixin inputAndTextArea($width, $height, $color, $border, $borderRadius, $transition) {
@@ -45,6 +34,18 @@
   border-radius: 5px;
   margin-bottom: 20px;
   transition: .5s;
+  @include text($fontFamilyStyle, $fonstSize, 400, $textColor);
+}
 
-  @include text($textFontFamily, $fonstSize, 1.2, 400);
+@mixin container() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100%;
+  padding: 50px 0;
+  border-radius: 5px;
+
+  width: 80%;
+  margin: 0 auto;
 }

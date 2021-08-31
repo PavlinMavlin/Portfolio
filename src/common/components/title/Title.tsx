@@ -1,12 +1,14 @@
-import style from "./Title.module.scss"
-import React from "react";
+import React from "react"
+import stype from "./Title.module.scss"
 
-type TitlePropsType = {
-    text: string
+export type TitleType = {
+    title: string
 }
 
-export function Title(props: TitlePropsType) {
-    return <div className={style.title}>
-        <h2>{props.text}</h2>
-    </div>
+export function Title(props: TitleType) {
+    return (
+        <div data-aos='zoom-in' className={stype.divTitle}>
+            <h2 className={stype.title}>{props.title}</h2>
+        </div>
+    )
 }

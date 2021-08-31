@@ -3,7 +3,7 @@
 
 .button {
   color: $textColor;
-  @include flex(row, center, center, nowrap);
+  @include flexBox(row, center, center, nowrap);
   @include button(160px, 50px, 20px, transparent, $primaryColor);
 
   &:focus {

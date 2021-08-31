@@ -1,11 +1,12 @@
-import style from "./Contacts.module.scss"
-import {Title} from "../common/components/title/Title";
-import React from "react";
+import React from "react"
+import {Title} from "../common/components/title/Title"
+import style from "./Contact.module.scss"
 
-export function Contacts() {
+export function Contact() {
+
     return (
         <section id={"contactsId"} className={style.contactBlock}>
-            <Title text="Contact"/>
+            <Title title="Contact"/>
             <div data-aos="zoom-in" data-aos-duration="900" className={style.contactContainer}>
                 <form className={style.contactForm}>
                     <input placeholder="Name" type="text" className={style.contactInput}/>

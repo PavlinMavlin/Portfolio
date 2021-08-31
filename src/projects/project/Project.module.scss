@@ -1,68 +1,76 @@
-@import "../../common/styles/sass/variables";
-@import "../../common/styles/sass/mixins";
+@import "./../../common/styles/sass/variables";
+@import "./../../common/styles/sass/mixins";
 
 .project {
-  width: 500px;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
+  @include flexBox(column, stretch, center, nowrap);
+  width: 100%;
   background-color: $bgSecondColor;
   border-radius: 5px;
 
-
-  .image {
-    height: 300px;
-    @include  flex(row,center,center, nowrap);
-    @include bySettings();
-    position: relative;
-    border-top-left-radius: 5px;
+  .projectImage {
+    width: 100%;
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-bottom: 7px solid $primaryColor;
     border-top-right-radius: 5px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: black;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.4;
-
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    transition: background-size 1s;
+    @media only screen and (max-width: 800px) {
+      background-size: cover;
     }
 
-
-    .viewBtn {
-      background-color: $primaryColor;
-      padding: 10px 20px;
-      position: relative;
-      z-index: 1;
-      color: $textColor;
+    @media only screen and (min-width: 850px) and (min-height: 600px) {
+      &:hover {
+        background-size: 130%;
+      }
     }
-
   }
 
-  .projectInfo {
-    padding: 25px 20px;
+  .projectBody {
+    @include flexBox(column, space-between, stretch, nowrap);
 
-    .projectTitle {
-      @include text($titleFontFamily, 20px, 1.2,400);
-      letter-spacing: 1px;
-      margin: 0 0 5px;
-      color: $textColor;
+    .projectInfo {
+      padding: 20px 20px 10px;
+
+      .nameProjectText {
+        @include text($fontFamilyStyle, 25px, 700, $primaryColor);
+        margin: 0 0 6px;
+        @media only screen and (min-width: 100px) and (max-width: 1700px) {
+          font-size: 20px;
+        }
+        @media screen and (orientation: landscape) and (min-height: 200px) and (max-height: 450px) {
+          font-size: 18px;
+        }
+      }
+
+      .descriptionProjectText {
+        @include text($fontFamilyStyle, 20px, 500, $textColor);
+        @media only screen and (min-width: 100px) and (max-width: 1700px) {
+          font-size: 16px;
+        }
+        margin: 0 0 10px;
+        @media screen and (orientation: landscape) and (min-height: 200px) and (max-height: 450px) {
+          font-size: 15px;
+        }
+      }
+
+      .TechnologiesText {
+        @include text($fontFamilyStyle, 25px, 600, $primaryColor);
+        margin: 0;
+        @media only screen and (min-width: 100px) and (max-width: 1700px) {
+          font-size: 16px;
+        }
+        @media screen and (orientation: landscape) and (min-height: 200px) and (max-height: 450px) {
+          font-size: 15px;
+        }
+      }
     }
 
-    .description {
-      @include text($textFontFamily, 15px, 1.8,250);
-      color: $textColor;
+    .projectButtonContainer {
+      @include flexBox(row, center, stretch, nowrap);
     }
-
   }
-
 }
-
-
-
-
-
-
-
