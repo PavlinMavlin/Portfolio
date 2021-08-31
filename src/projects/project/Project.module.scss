@@ -70,7 +70,8 @@
     }
 
     .projectButtonContainer {
-      @include flexBox(row, center, stretch, nowrap);
+      @include flexBox(row, space-around, stretch, nowrap);
+
     }
   }
 }
