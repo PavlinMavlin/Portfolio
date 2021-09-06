@@ -10,7 +10,7 @@ export type MainType = {
 const particlesOptions = {
     "particles": {
         "number": {"value": 90, "density": {"enable": true, "value_area": 800}},
-        "color": {"value": "#4e93e6"},
+        "color": {"value": "#2d9687"},
         "shape": {
             "type": "circle",
             "stroke": {"width": 0, "color": "#"},
