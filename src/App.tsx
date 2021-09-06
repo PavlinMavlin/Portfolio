@@ -22,7 +22,7 @@ import sassLogo from "./assets/images/skills/sassLogo.jpg"
 import gitLogo from "./assets/images/skills/gitLogo.png"
 import todolistImage from "./assets/images/projects/todolist.png"
 import socialNetworkImage from "./assets/images/projects/socialNetwork.png"
-import LearningCardsImage from "./assets/images/projects/students.jpg"
+import LearningCardsImage from "./assets/images/projects/study.png"
 
 function App() {
 
@@ -121,7 +121,7 @@ function App() {
             projectDescription: "Web application designed to conveniently structure information about all current tasks in one place.",
             stackTechnology: "ReactJS, TS, Redux-thunk, Axios, Formik, Material UI, Storybook.",
             viewCodeLink: "https://github.com/PavlinMavlin/todolist",
-            viewDemoLink:"https://PavlinMavlin.github.io/todolist",
+            viewDemoLink: "https://PavlinMavlin.github.io/todolist",
             style: {backgroundImage: `url(${todolistImage})`}
         },
         {
@@ -130,7 +130,7 @@ function App() {
             projectDescription: "Web application that allows registered users to post information and communicate with each other.",
             stackTechnology: "ReactJS, TS, Redux-thunk, Axios, Redux-form, CSS.",
             viewCodeLink: "https://github.com/PavlinMavlin/react-kabzda-network/tree/master/my-app",
-            viewDemoLink:"",
+            viewDemoLink: "",
             style: {backgroundImage: `url(${socialNetworkImage})`}
         },
         {
@@ -139,7 +139,7 @@ function App() {
             projectDescription: "This application helps students memorize information.",
             stackTechnology: "ReactJS, TS, Redux-thunk, Axios, Formik, Material UI",
             viewCodeLink: "https://github.com/PavlinMavlin/friday_project",
-            viewDemoLink:"https://PavlinMavlin.github.io/friday_project",
+            viewDemoLink: "https://PavlinMavlin.github.io/friday_project",
             style: {backgroundImage: `url(${LearningCardsImage})`}
         }
     ]

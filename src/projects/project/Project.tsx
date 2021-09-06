@@ -15,7 +15,7 @@ export type ProjectType = {
 export function Project(props: ProjectType) {
 
     return (
-        <div data-aos="zoom-in" data-aos-duration="900" className={style.project}>
+        <div data-aos="zoom-in" data-aos-duration="1000" className={style.project}>
             <div className={style.projectImage} style={props.style}></div>
             <div className={style.projectBody}>
                 <div className={style.projectInfo}>
