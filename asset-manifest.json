@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a3cef544.chunk.css",
-    "main.js": "/Portfolio/static/js/main.01700ed1.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.01700ed1.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.9487d46b.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.9487d46b.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.7ffcb3af.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.7ffcb3af.js.map",
     "static/js/2.3565bc07.chunk.js": "/Portfolio/static/js/2.3565bc07.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/reduxLogo.7b24d44a.png": "/Portfolio/static/media/reduxLogo.7b24d44a.png",
     "static/media/sassLogo.56fca5c8.jpg": "/Portfolio/static/media/sassLogo.56fca5c8.jpg",
     "static/media/socialNetwork.d3ca8775.png": "/Portfolio/static/media/socialNetwork.d3ca8775.png",
-    "static/media/students.8a350939.jpg": "/Portfolio/static/media/students.8a350939.jpg",
+    "static/media/study.8550d112.png": "/Portfolio/static/media/study.8550d112.png",
     "static/media/todolist.9f481248.png": "/Portfolio/static/media/todolist.9f481248.png",
     "static/media/tsLogo.2218cc17.png": "/Portfolio/static/media/tsLogo.2218cc17.png"
   },
@@ -28,6 +28,6 @@
     "static/js/runtime-main.7ffcb3af.js",
     "static/js/2.3565bc07.chunk.js",
     "static/css/main.a3cef544.chunk.css",
-    "static/js/main.01700ed1.chunk.js"
+    "static/js/main.9487d46b.chunk.js"
   ]
 }
